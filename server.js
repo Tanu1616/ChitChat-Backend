@@ -17,7 +17,7 @@ const server = require('http').createServer(app);
 const PORT = 5001;
 const io = require('socket.io')(server, {
   cors: {
-    origin: 'http://localhost:3000' || 'https://chitchat-48k9.onrender.com',
+    origin: 'http://localhost:3000',
     methods: ['GET', 'POST']
   }
 })
